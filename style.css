@@ -1,0 +1,232 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+.index{
+    padding: 0px 15px;
+    height: 1000px;
+}
+#cover_name,#viewdineIn{
+    height: 200px;
+    width: 390px;
+    font-size: 25px;
+    font-family: "Arvo",sans-serif;
+    text-align: center;
+}
+#cvn{
+    padding: 30px;
+    padding-left: 40px;
+}
+#viewdineIn{
+    height: 100px;
+    border: 5px solid black;
+}
+#viewdineIn a{
+    color: black;
+}
+#vdi{
+    padding: 33px;
+}
+#firstfooter{
+    font-family: "Nunito",sans-serif;
+}
+#firstfooter a{
+    color: black;
+}
+/* second page */
+.second{
+    padding: 0px 15px;
+    height: 1406.15px;
+    width: 473.6px;
+}
+.sidebar{
+    position: fixed;
+    left: -473px;
+    width: 473px;
+    height: 100%;
+    background: white;
+    transition: all .5s ease;
+}
+.sidebar header{
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    line-height: 70px;
+    user-select: none;
+    background: white;
+}
+.sidebar ul {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 15px;
+    color: black;
+    padding-left :40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid black;
+}
+#check{
+    display: none;
+}
+label #btn,label #cancel{
+    position: fixed; /* absolute*/
+    cursor: pointer;
+    border-radius : 3px;
+}
+label #btn{
+    left:40px;
+    top:0px;
+    font-size: 30px;
+    color:black;
+    padding: 6px 12px;
+    transition: all .5s;
+    background-color: white;
+}
+label #cancel{
+    z-index: 100;
+    left: -195px;
+    width: 100px;
+    height: 100px;
+    top: 0px;
+    font-size: 30px;
+    color:red;
+    padding: 4px 9px;
+    transition: all .5s ease;
+}
+#check:checked ~.sidebar{
+    left:0;
+}
+#check:checked ~.label #btn{
+    left:473px;
+    opacity: 0;
+    pointer-events: none;
+}
+#check:checked ~.label #cancel{
+    left: 195px;
+}
+/* Second page */
+.secondclass{
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    height: 1406.15px;
+    width: 473.6px;
+    align-items: center;
+}
+#most_seller,#snacks,#beverages,#main_course{
+    border-width: 2px;
+    height: 146.7px;
+    width: 390px;
+    text-align: center;
+    background-size: cover;
+    color: white;
+    font-size: 40px;
+    font-family: "Nunito",sans-serif;
+    padding: 0px 15px;
+    font-weight: 700;
+}
+#Headname,#allitems{
+    height: 146px;
+    width: 390px;
+    text-align: center;
+    background-size: cover;
+    font-size: 35px;
+    font-weight: 700;
+    font-family: "Nunito",sans-serif;
+    border: 5px solid black;
+}
+#ms,#snk,#bvg,#mcr,#alit{
+    margin: 45px;
+}
+#Headnameview{
+    margin: 48px;
+}
+#ms a,#snk a,#bvg a,#mcr a{
+    color: white;
+}
+#most_seller{
+    background-image: url("mostsellerback_1.jpg");
+}
+#snacks{
+    background-image: url("snacks.jpg");
+}
+#beverages{
+    background-image: url("bvg.jpg");
+}
+#main_course{
+    background-image: url("mcr.jpg");
+}
+#Headnameview,#alit a{
+    color: black;
+    font-family: "Nunito",sans-serif;
+    font-size: 30.2px;
+    font-weight: 700;
+}
+#category{
+    text-align: center;
+    width: 390px;
+    font-size:18px;
+    font-family: "Nunito",sans-serif;
+    color: gray;
+    
+}
+.Mostsellerclass,.snacksclass,.beveragesclass,.main_courseclass,.allitemsclass{
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    width: 473.6px;
+    align-items: center;
+}
+#MostSeller_header,#snacks_header,#beverages_header,#maincourse_header{
+height: 100px;
+width: 390px;
+text-align: center;
+background-size: cover;
+font-size: 35px;
+font-family: "Nunito",sans-serif;
+font-weight: 700;
+border: 5px solid black;
+}
+#msd,#snd,#bvd,#mcd{
+    padding: 25px;
+}
+#samosa,#tea,#FriedRice,#water,#thumsup,#appyfizz,#patties,#coffee,#coke,#mazaa,#pepsi,#pavbhaji,#Purisabji,#chole_kulche,#Chole_bhature{
+    display:flex;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #eaeaea;
+}
+#sms_card,#pty_card,#card{
+    display: flex;
+    flex-direction: column;
+    height: 190px;
+    width: 190px;
+    background-color: #eaeaea;
+}
+#samosatext,#pty_text,#text{
+    font-size: 20px;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    height: 30px;
+    margin: 6px;
+}
+#veg{
+    height: 30px;
+    margin: 15px;
+    
+}
+#samosa #veg,#patties #veg{
+    margin: 5px 15px 5px 15px;
+}
+
+#sms_descprition,#pty_descprition,#descprition{
+    height: 50px;
+    padding: 10px;
+}
+#notesoftdrink{
+    height: 50px;
+}
