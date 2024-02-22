@@ -43,6 +43,7 @@
 }
 .sidebar{
     position: fixed;
+    top: 45px;
     left: -473px;
     width: 473px;
     height: 100%;
@@ -87,13 +88,11 @@ label #btn{
     background-color: white;
 }
 label #cancel{
-    z-index: 100;
     left: -195px;
     width: 100px;
     height: 100px;
     top: 0px;
     font-size: 30px;
-    color:red;
     padding: 4px 9px;
     transition: all .5s ease;
 }
@@ -107,6 +106,14 @@ label #cancel{
 }
 #check:checked ~.label #cancel{
     left: 195px;
+}
+#background{
+    position: fixed;
+    top: 0px;
+    padding: 0px;
+    height: 45px;
+    width: 473px;
+    background-color: white;
 }
 /* Second page */
 .secondclass{
