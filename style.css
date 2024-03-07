@@ -23,7 +23,7 @@
     height: 100px;
     border: 5px solid black;
 }
-#viewdineIn a{
+#viewdineIn a,#University a{
     color: black;
 }
 #vdi{
